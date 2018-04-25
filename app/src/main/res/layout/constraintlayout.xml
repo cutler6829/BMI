@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_raining_day">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/rounded_rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="sat.04/18/2018"
+            style="@style/myStyle"
+            app:layout_constraintBottom_toTopOf="@+id/textView23"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_weight="1.5" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:text="09:47"
+            style="@style/myStyle"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21"
+            app:layout_constraintVertical_weight="2.5" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:text="wind Direct:North"
+            style="@style/myStyle"
+            app:layout_constraintBottom_toTopOf="@+id/textView25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView23"
+            app:layout_constraintVertical_weight="1" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:text="Wind speed:9km/h"
+            style="@style/myStyle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView24"
+            app:layout_constraintVertical_weight="1" />
+
+        <TextView
+            android:id="@+id/textView27"
+            style="@style/myStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="76dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:text="27"
+            android:textSize="55sp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView4"
+            app:layout_constraintHorizontal_bias="0.24"
+            app:layout_constraintStart_toEndOf="@+id/textView26"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="102dp"
+            android:layout_height="60dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView13"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:srcCompat="@drawable/rain_day" />
+
+        <TextView
+            android:id="@+id/textView13"
+            style="@style/myStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Humid and partly \n Cloud"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/textView20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView20"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            app:layout_constraintVertical_weight="1.5" />
+
+        <TextView
+            android:id="@+id/textView20"
+            style="@style/myStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Max31℃"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/textView22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView22"
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            app:layout_constraintVertical_weight="1" />
+
+        <TextView
+            android:id="@+id/textView22"
+            style="@style/myStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="min26℃"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20"
+            app:layout_constraintVertical_weight="1" />
+
+        <TextView
+            android:id="@+id/textView26"
+            style="@style/myStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_marginBottom="8dp"
+            android:text="Am"
+            app:layout_constraintBottom_toTopOf="@+id/textView24"
+            app:layout_constraintStart_toEndOf="@+id/textView23" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:text="℃"
+            style="@style/myStyle"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/textView27"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
